@@ -13,7 +13,13 @@ export default new Vuex.Store({
   plugins: [
     createPersistedState(),
   ],
-  state: {},
+  state: {
+    user: {
+      loggedIn: false,
+      token: null,
+      isAdmin: false,
+    },
+  },
   actions,
   getters,
   mutations,
