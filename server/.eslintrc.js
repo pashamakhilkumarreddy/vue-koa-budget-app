@@ -1,7 +1,6 @@
 module.exports = {
   env: {
     browser: true,
-    commonjs: true,
     es2020: true,
     node: true,
   },
@@ -10,6 +9,7 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 11,
+    sourceType: 'module',
   },
   rules: {
   },
