@@ -1,8 +1,10 @@
 export default {
   isUserLoggedIn({
-    loggedIn,
-    token,
+    user: {
+      isLoggedIn,
+      token,
+    },
   }) {
-    return loggedIn && token;
+    return token && isLoggedIn;
   },
 };

@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import createPersistedState from 'vuex-persistedstate';
 
+import state from './state';
 import actions from './actions';
 import getters from './getters';
 import mutations from './mutations';
@@ -13,13 +14,7 @@ export default new Vuex.Store({
   plugins: [
     createPersistedState(),
   ],
-  state: {
-    user: {
-      loggedIn: false,
-      token: null,
-      isAdmin: false,
-    },
-  },
+  state,
   actions,
   getters,
   mutations,
